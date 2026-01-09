@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #121212; 
+            background-color: #121212; /* Fondo negro elegante */
             color: #ffffff;
             font-family: 'Montserrat', sans-serif;
             margin: 0;
@@ -20,9 +20,9 @@
             text-align: center;
             max-width: 600px;
             padding: 40px;
-            background: #1e1e1e; 
+            background: #1e1e1e; /* Tarjeta gris oscuro */
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
             margin: 20px;
         }
         h1 {
@@ -34,7 +34,7 @@
         h2 {
             font-weight: 300;
             font-size: 1.1rem;
-            color: #a0a0a0; 
+            color: #a0a0a0;
             margin-bottom: 30px;
         }
         p {
@@ -42,6 +42,7 @@
             color: #d1d1d1;
             margin-bottom: 40px;
         }
+        /* Estilo del Botón de Descarga */
         .btn {
             display: inline-block;
             background-color: #ffffff;
@@ -61,23 +62,37 @@
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(255,255,255,0.1);
         }
+        /* Estilos del Footer de Contacto */
         .footer-links {
-            margin-top: 30px;
-            font-size: 0.9rem;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
         }
-        .footer-links a {
-            color: #a0a0a0;
+        .contact-label {
+            font-size: 0.8rem; 
+            color: #666; 
+            margin-bottom: 15px; 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+        }
+        .contact-link {
+            display: block;
+            margin-bottom: 12px;
             text-decoration: none;
-            margin: 0 10px;
+            color: #e0e0e0;
+            font-size: 1.1rem;
+            transition: color 0.3s;
         }
-        .footer-links a:hover {
-            color: #fff;
+        .contact-link:hover {
+            color: #ffffff;
+            transform: scale(1.02);
         }
     </style>
 </head>
 <body>
 
     <div class="container">
+        
         <h1>VÍCTOR EZEKIEL CASTILLO</h1>
         <h2>Auxiliar de Sistemas | Desarrollador Full Stack</h2>
         
@@ -90,8 +105,15 @@
         <a href="cv_victor_castillo.pdf" class="btn" download>Descargar Curriculum Vitae</a>
 
         <div class="footer-links">
-
-            <a href="mailto:vc7024717@gamil.com">Contactar</a>
+            <p class="contact-label">Contacto Directo</p>
+            
+            <a href="mailto:vc7024717@gmail.com" class="contact-link">
+                ✉️ vc7024717@gmail.com
+            </a>
+            
+            <a href="tel:+524776208570" class="contact-link">
+                📞 477 620 8570
+            </a>
         </div>
     </div>
 
